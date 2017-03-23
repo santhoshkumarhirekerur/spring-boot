@@ -1,4 +1,4 @@
-It is Java maven project
+It is Java maven project. import the project and  run maven clean install.  This project is coding example of spring-boot, error-handling, spring-test,rest-API 
 
 Software requirement for development
 ----------------------------------
@@ -13,15 +13,15 @@ Software requirement for development
 
 STEP1: Running jar file (Start Server)
 --------------------------------------------------------
-Jar file is in target folder. Clone project and run  
+Jar file is in target folder. Clone/download project and make sure you are running java command using Java 8.  
 
 
 C:\...\spring-boot>java -jar target/wordcount_octus-0.0.1-SNAPSHOT.jar
 
-STEP2: Running jar file (Start Server)
+STEP2:  Below are curl commonds to be excuted () 
 --------------------------------------------------------
 
-/*Running curl using  basic user name and password*/
+Running curl using  basic user name and password
 ---------------------------------------------------------
 1. curl -X POST -H "Content-Type: application/json" -v -u admin:admin123 http://127.0.0.1:8080/counter-api/search -d"{"""searchText""":["""Duis""","""Sed""","""Donec""","""Augue""","""Pellentesque""","""123"""]}" -k
 
@@ -29,7 +29,7 @@ STEP2: Running jar file (Start Server)
 
 
 
-/*Running curl using Basic Authentication*/
+Running curl using Basic Authentication
 -------------------------------------------------------
 3. curl -X POST -H "Content-Type: application/json" -H "authorization:Basic YWRtaW46YWRtaW4xMjM=" -v http://127.0.0.1:8080/counter-api/search -d"{"""searchText""":["""Duis""","""Sed""","""Donec""","""Augue""","""Pellentesque""","""123"""]}" -k
 
