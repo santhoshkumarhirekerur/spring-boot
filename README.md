@@ -2,10 +2,10 @@ It is Java maven project
 
 Software requirement for development
 ----------------------------------
-Java - JDK 1.8.0_121
-Spring  boot- 1.5.2.RELEAS
-eclipse- Neon.3 Release (4.6.3RC3)
-Maven - 3.3.9
+1. Java - JDK 1.8.0_121
+2. Spring  boot- 1.5.2.RELEAS
+3. eclipse- Neon.3 Release (4.6.3RC3)
+4. Maven - 3.3.9
 
 
 
