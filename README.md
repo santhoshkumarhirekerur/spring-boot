@@ -9,15 +9,20 @@ Software requirement for development
 
 
 
-/****** step1   ****/
 
---running jar file
-/*This is spring boot project. when we execute the below command, a tomcat start running*/
-C:\...\WordCountRestAPI>java -jar target/wordcount_octus-0.0.1-SNAPSHOT.jar
 
-/****** step2   ****/
+STEP1: Running jar file (Start Server)
+--------------------------------------------------------
+Jar file is in target folder. Clone project and run  
+
+
+C:\...\spring-boot>java -jar target/wordcount_octus-0.0.1-SNAPSHOT.jar
+
+STEP2: Running jar file (Start Server)
+--------------------------------------------------------
 
 /*Running curl using  basic user name and password*/
+---------------------------------------------------------
 1. curl -X POST -H "Content-Type: application/json" -v -u admin:admin123 http://127.0.0.1:8080/counter-api/search -d"{"""searchText""":["""Duis""","""Sed""","""Donec""","""Augue""","""Pellentesque""","""123"""]}" -k
 
 2. curl -H "Content-Type: application/json" -H "Accept: text/csv" -v -u admin:admin123 http://127.0.0.1:8080/counter-api/top/20  -k
@@ -25,6 +30,7 @@ C:\...\WordCountRestAPI>java -jar target/wordcount_octus-0.0.1-SNAPSHOT.jar
 
 
 /*Running curl using Basic Authentication*/
+-------------------------------------------------------
 3. curl -X POST -H "Content-Type: application/json" -H "authorization:Basic YWRtaW46YWRtaW4xMjM=" -v http://127.0.0.1:8080/counter-api/search -d"{"""searchText""":["""Duis""","""Sed""","""Donec""","""Augue""","""Pellentesque""","""123"""]}" -k
 
 4. curl -H "Content-Type: application/json" -H "Accept: text/csv" -H "authorization:Basic YWRtaW46YWRtaW4xMjM=" -v http://127.0.0.1:8080/counter-api/top/20  -k
