@@ -18,7 +18,7 @@ Jar file is in target folder. Clone/download project and make sure you are runni
 
 C:\...\spring-boot>java -jar target/wordcount_octus-0.0.1-SNAPSHOT.jar
 
-STEP2:  Below are curl commonds to be excuted () 
+STEP2:  Below are curl commands to run 
 --------------------------------------------------------
 
 Running curl using  basic user name and password
